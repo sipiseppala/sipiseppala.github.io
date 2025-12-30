@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'CMU Serif';
+    src: url('fonts/cmus.woff') format('woff'),
+         url('fonts/cmus.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CMU Concrete';
+    src: url('fonts/cmuc.woff') format('woff'),
+         url('fonts/cmuc.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('fonts/Raleway-Medium.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-Lig';
+    src: url('fonts/Lato-Lig.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-Bol';
+    src: url('fonts/Lato-Bol.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-Reg';
+    src: url('fonts/Lato-Reg.ttf') format('truetype');
+}
+
+
+body{
+    background: #231f20 url(/img/img-noise-250x250.png);
+    color: #f1d7a6; /* light orange */
+    font-family: 'CMU Concrete', sans-serif;
+    font-size: 2em;
+}
+
+h1, h2, h3{
+    font-family: "CMU Serif", Georgia, serif;
+    color: #eec683; /* normal orange */
+}
+h4,h5{
+    color: #d2a25e; /* dark orange */
+}
+a{
+    text-decoration: none;
+    color: #f1d7a6; /* light orange */
+}
+
+
+#wrapper{
+    width: 100%;
+    box-shadow: 0 0 1em black;
+    background-color: #130F10;
+}
+
+@media (min-height: 900px) {
+  #wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+#content{
+    padding: 0.1em;
+}
+
+#profile-pic {
+    margin: 2em 0;
+}
+
+#details{
+    margin-top: 1em;
+    margin-bottom: 3em;
+    letter-spacing: 1px;
+}
+
+#profiles a{
+    padding-right: 1em;
+    padding-left: 1em;
+    display: inline-block;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-smaller{
+    font-size: smaller;
+}
+
+
+/* CV */
+
+#cv-wrapper{
+    margin-top: 0.5em; 
+    margin-bottom: 1em;
+    width: 95%;
+    padding: 0;
+}
+
+#cv-dl{
+    font-size: 11pt;
+    display: block;
+    text-align: right;
+    width: 99%;
+}
+
+#cv-content, #cv-content-top{
+    font-family: "Raleway-Medium", sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    background-color: #fefefe; /*=kuvan yläosa, #e9e9e9 kuvan ala-osa*/
+}
+
+#cv-content-top{
+    background: #e9e9e9;
+    text-align: center;
+    padding: 2rem 1rem 0 1rem;
+}
+
+#cv-content-top h2{
+    font-family: 'Lato-Lig', sans-serif;
+}
+
+#cv-content{
+    padding: 6rem 1rem;
+}
+
+
+#cv-name{
+        margin-top: 1em;
+}
+
+#cv-c-left{
+    background: linear-gradient(to top right, #fefefe 0%, #fefefe 50%, #e9e9e9 50%, #e9e9e9 100%);
+    float: left;
+    width: 50%;
+    height: 2em;
+}
+#cv-c-right{
+    background: linear-gradient(to top left, #fefefe 0%, #fefefe 50%, #e9e9e9 50%, #e9e9e9 100%);
+    float: right;
+    width: 50%;
+    height: 2em;
+}
+
+@media print{
+
+}
+
+@media screen and (min-width: 600px){
+
+    #cv-content-top{
+        padding: 2rem 1rem;
+    }
+    #cv-content{
+        padding: 5rem 2rem;
+    }
+    #cv-content h6{
+        font-size: 120%;
+    }
+    #cv-content p{
+        width: 80%;
+    }
+    .text-smaller{
+        font-size: 100%;
+    }
+
+}
+
+#cv-name a{
+    color: #333; /* normal orange */
+}
+
+#cv-content a, #cv-content b{
+    /*color: #1EAEDB;  /* blue/teal */
+    color: #345; /* dark blue */
+}
+
+#cv-content h5{
+    font-family: 'Lato-Lig', sans-serif;
+    letter-spacing: 1px;
+}
+
+#cv-content h6{
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    font-family: 'Lato-Reg', sans-serif;
+}
+
+#cv-content h6 b{
+    font-family: 'Lato-Bol', sans-serif;
+}
+
+#cv-content hr{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#cv-content p{
+    margin-bottom: 0.75rem;
+}
+
+.keyword{
+    /*padding: 0 0.5em;*/
+    padding-right: 1em;
+    display: inline-block;
+}
+
